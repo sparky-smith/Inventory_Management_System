@@ -1,0 +1,63 @@
+<%- include('include/_header.ejs')%>
+<%- include('include/_modalstyle.ejs')%>
+</head>
+
+<div class="modal hidden" >
+    <form action="/update-condemnation/<%= con._id%>" id="#update_condemnation_form" method="POST">
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" name="id" value="<%= con.id%>">
+        </div>
+        <div class="form-group">
+            <label for="">Ledger</label>
+            <input type="text" name="ledger" value="<%= con.ledger%>">
+        </div>
+        <div class="form-group">
+            <label for="">Page</label>
+            <input type="text" name="page" value="<%= con.page%>">
+        </div>
+        <div class="form-group">
+            <label for="">Nomenclature</label>
+            <input type="text" name="nomenclature" value="<%= con.nomenclature%>">
+        </div>
+        <div class="form-group">
+            <label for="">A/U(unit)</label>
+            <input type="text" name="unit" value="<%= con.unit%>">
+        </div>
+        <div class="form-group">
+            <label for="">Quantity</label>
+            <input type="number" name="quantity" value="<%= con.quantity%>">
+        </div>
+        <div class="form-group"><label for="">Serv(S)/ Unserv(US)</label>
+            <input type="text" name="serv" value="<%= con.serv%>">
+        </div>
+        <div class="form-group"><label for="">Cost of Procurement</label>
+            <input type="number" name="cost_of_procurement" value="<%= con.cost_of_procurement%>">
+        </div>
+        <div class="form-group"><label for="">Date of year of Procurement</label>
+            <input type="date" name="date_of_procurement" value="<%= con.date_of_procurement%>">
+        </div>
+        <div class="form-group"><label for="">No of years of useful service</label>
+            <input type="number" name="no_of_years_of_service" value="<%= con.no_of_years_of_service%>">
+        </div>
+        <div class="form-group"><label for="">No of years of non-utilization</label>
+            <input type="number" name="no_of_years_of_nonutilization" value="<%= con.no_of_years_of_nonutilization%>">
+        </div>
+        <div class="form-group"><label for="">Reason for disposal</label>
+            <input type="text" name="reason_for_disposal" value="<%= con.reason_for_disposal%>">
+        </div>
+        <div class="form-group"><label for="">R / NR</label>
+            <input type="text" name="r_nr" value="<%= con.r_nr%>">
+        </div>
+        <div class="form-group"><label for="">Disposal Action</label>
+            <input type="text" name="disposal_action" value="<%= con.disposal_action%>">
+        </div>
+        <div class="form-group"><label for="">Salvage/scrap weight</label>
+            <input type="text" name="salvage" value="<%= con.salvage%>">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn">Update</button>
+        </div>
+    </form>
+</div>
+<%- include('include/_footer.ejs')%>

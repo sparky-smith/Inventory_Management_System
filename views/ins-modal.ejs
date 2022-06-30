@@ -1,0 +1,48 @@
+<%- include('include/_header.ejs')%>
+<%- include('include/_modalstyle.ejs')%>
+</head>
+
+<div class="modal hidden" id="#inspection_form">
+    <form action="/api/inspection" method="POST">
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" name="id">
+        </div>
+        <div class="form-group">
+            <label for="">Inspection Date</label>
+            <input type="date" name="inspection_date">
+        </div>
+        <div class="form-group">
+            <label for="">Receipt No</label>
+            <input type="text" name="receipt_no">
+        </div>
+        <div class="form-group">
+            <label for="">Inspection note no</label>
+            <input type="text" name="inspect_note_no">
+        </div>
+        <div class="form-group">
+            <label for="">Supply order no</label>
+            <input type="text" name="supply_order_no">
+        </div>
+        <div class="form-group">
+            <label for="">Supplier</label>
+            <input type="text" name="supplier">
+        </div>
+        <div class="form-group"><label for="">Nomenclature</label>
+            <input type="text" name="nomenclature">
+        </div>
+        <div class="form-group"><label for="">Item name</label>
+            <input type="text" name="item_name">
+        </div>
+        <div class="form-group"><label for="">Issued person</label>
+            <input type="text" name="issued_person">
+        </div>
+        <div class="form-group"><label for="">Issued person's section</label>
+            <input type="text" name="issued_person_section">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn">Save</button>
+        </div>
+    </form>
+</div>
+<%- include('include/_footer.ejs')%>

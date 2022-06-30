@@ -1,0 +1,51 @@
+<%- include('include/_header.ejs')%>
+<%- include('include/_modalstyle.ejs')%>
+</head>
+
+<div class="modal hidden" id="#distribution_form">
+    <form action="/api/distribution"  method="POST">
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" name="id">
+        </div>
+        <div class="form-group">
+            <label for="">Date of Issue</label>
+            <input type="date" name="date_of_issue">
+        </div>
+        <div class="form-group">
+            <label for="">Nomenclature</label>
+            <input type="text" name="nomenclature">
+        </div>
+        <div class="form-group">
+            <label for="">Ledger</label>
+            <input type="text" name="ledger">
+        </div>
+        <div class="form-group">
+            <label for="">Page</label>
+            <input type="text" name="page">
+        </div>
+        <div class="form-group">
+            <label for="">Available Quantity</label>
+            <input type="text" name="available_quantity">
+        </div>
+        <div class="form-group"><label for="">Quantity Issued</label>
+            <input type="text" name="quantity_issued">
+        </div>
+        <div class="form-group"><label for="">Purpose of use</label>
+            <input type="text" name="purpose_of_use">
+        </div>
+        <div class="form-group"><label for="">Issue of Location</label>
+            <input type="text" name="issue_of_location">
+        </div>
+        <div class="form-group"><label for="">Name of receiver</label>
+            <input type="text" name="name_of_receiver">
+        </div>
+        <div class="form-group"><label for="">Name of wing</label>
+            <input type="text" name="name_of_wing">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn">Save</button>
+        </div>
+    </form>
+</div>
+<%- include('include/_footer.ejs')%>

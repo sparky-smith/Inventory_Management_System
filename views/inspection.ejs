@@ -1,0 +1,42 @@
+<!-- Include Header -->
+<%- include('include/_header.ejs')%>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <div class="sec-4">
+                <a href="/inspection_form" class="add-btn"><i class="fa-solid fa-plus"></i></a>    
+            </div>
+            
+        <%- include('include/_sec-1.ejs')%>
+        <div class="sec-2">
+            <h1 class="txt-center">Inspection</h1>
+        </div>
+        <%- include('include/_sec-3.ejs')%>
+        </div>
+        <form action="/inspection" method="POST">
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th>Serial No</th>
+                        <th>Id</th>
+                        <th>Inspection Date</th>
+                        <th>Receipt No</th>
+                        <th>Inspection Note No</th>
+                        <th>Supply Order No</th>
+                        <th>Supplier</th>
+                        <th>Nomenclature</th>
+                        <th>Item Name</th>
+                        <th>Issued person</th>
+                        <th>Issued person's Section</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <%- include('include/_ins.ejs')%>
+                </tbody> 
+            </table>
+        </form>
+        <%- include('include/_footer.ejs')%>
+    
+    </main>

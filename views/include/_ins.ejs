@@ -1,0 +1,44 @@
+<% for(var i=0 ; i< ins.length; i++){ %>
+
+    <tr>
+        <td>
+            <%= i+1 %>
+        </td>
+        <td>
+            <%= ins[i].id %>
+        </td>
+        <td>
+            <%= ins[i].inspection_date %>
+        </td>
+        <td>
+            <%= ins[i].receipt_no %>
+        </td>
+        <td>
+            <%= ins[i].inspect_note_no %>
+        </td>
+        <td>
+            <%= ins[i].supply_order_no %>
+        </td>
+        <td>
+            <%= ins[i].supplier %>
+        </td>
+        <td>
+            <%= ins[i].nomenclature %>
+        </td>
+        <td>
+            <%= ins[i].item_name %>
+        </td>
+        <td>
+            <%= ins[i].issued_person %>
+        </td>
+        <td>
+            <%= ins[i].issued_person_section %>
+        </td>
+        <td><a href="/update-inspection/<%= ins[i]._id %>" class="border-shadow update btn">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a class="border-shadow delete btn" href="/delete_ins/<%= ins[i]._id %>"><span class="text-gradient"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+    <%} %>

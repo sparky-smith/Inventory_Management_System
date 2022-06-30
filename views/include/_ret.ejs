@@ -1,0 +1,41 @@
+<% for(var i=0 ; i< ret.length; i++){ %>
+
+    <tr>
+        <td>
+            <%= i+1 %>
+        </td>
+        <td>
+            <%= ret[i].id %>
+        </td>
+        <td>
+            <%= ret[i].return_date %>
+        </td>
+        <td>
+            <%= ret[i].issued_item_name %>
+        </td>
+        <td>
+            <%= ret[i].nomenclature %>
+        </td>
+        <td>
+            <%= ret[i].type %>
+        </td>
+        <td>
+            <%= ret[i].purpose_of_use %>
+        </td>
+        <td>
+            <%= ret[i].name_of_receiver %>
+        </td>
+        <td>
+            <%= ret[i].issue_location %>
+        </td>
+        <td>
+            <%= ret[i].quantity_issued %>
+        </td>
+        <td><a href="/update-return/<%= ret[i]._id %>" class="border-shadow update btn">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="border-shadow delete btn" href="/delete_ret/<%= ret[i]._id %>"><span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+    </tr>
+    <%} %>

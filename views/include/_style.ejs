@@ -1,0 +1,205 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --dark: #6E7E85;
+        --light: #E2E2E2;
+        --black: #1C0F13;
+        --light-dark: #B7CECE;
+        --radius: 5px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    table {
+        border-spacing: 0px;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .table td,
+    .table th {
+        padding: .75rem;
+        text-align: center;
+        border-top: 1px solid var(--black);
+    }
+
+    form {
+        padding: 0 1rem;
+    }
+
+    .header,
+    .home-header {
+        text-align: center;
+        margin: 2rem;
+        background-color: var(--light);
+        padding: 2rem;
+    }
+
+    .home-header {
+        font-size: 3rem;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 5%35% 30% 40%;
+    }
+
+    .sec-1,
+    .sec-2,
+    .sec-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec-1 input,
+    select,
+    .sec-1 button {
+        padding: .2rem;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--dark);
+        color: var(--light);
+    }
+
+    .sec-1 button {
+        padding: .25rem;
+        cursor: pointer;
+    }
+
+    ::placeholder {
+        color: var(--light);
+    }
+
+    .sec-4 {
+        display: grid;
+        align-items: center;
+    }
+
+    .add-btn {
+        padding: .5rem .25rem;
+        background-color: var(--dark);
+        color: var(--light);
+        border-radius: var(--radius);
+    }
+    .add-btn:hover{
+        background-color: var(--light-dark);
+        color: var(--black);
+    }
+    .sec-2 h1 {
+        font-size: 3rem;
+        color: var(--black);
+    }
+
+    thead {
+        background-color: var(--dark);
+        color: var(--light);
+    }
+
+    tbody>tr:hover {
+        background-color: var(--light);
+    }
+
+    a.btn {
+        display: inline-block;
+        background: var(--dark);
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+        margin: 1rem;
+        cursor: pointer;
+        color: var(--light);
+        border-radius: var(--radius);
+    }
+
+    a.home-btn {
+        padding: 1rem 1.5rem;
+        border-radius: var(--radius);
+    }
+
+    .btn:hover {
+        background-color: var(--light-dark);
+        color: var(--black);
+    }
+
+    .sections {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    a.update,
+    a.delete {
+        color: var(--light);
+        background: var(--dark);
+        padding: .125rem;
+        margin: 0;
+    }
+
+    td:last-child {
+        display: grid;
+        gap: .2rem;
+    }
+
+    /* form */
+    
+        .modal form {
+            /* background-color: red; */
+            padding: 4rem;
+            display: grid;
+            gap: 1.2rem;
+            justify-content: center;
+            align-items: center; 
+            text-align: center;   
+        }
+
+        .modal label {
+            display: inline-block;
+            float: left;
+            clear: left;
+            width: 150px;
+            text-align: right;
+        }
+
+        .modal input {
+            display: inline-block;
+            float: left;
+            margin-left: 5rem;
+            padding: .5rem;
+            width: 20rem;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--light);
+            border: none;
+        }
+        .modal form button{
+            padding: .75rem 2rem ;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+       
+        .modal{
+            background-color: var(--dark);
+            height: fit-content;
+            width: fit-content;
+            position: relative;
+            color: var(--light);
+        }
+        .modal .close-modal{
+            position: absolute;
+            top: .3rem;
+            right: .5rem;
+            /* padding: 1rem; */
+            font-size: 3rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+</style>

@@ -1,0 +1,37 @@
+<!-- Include Header -->
+<%- include('include/_header.ejs')%>
+
+<body>
+    <div class="header">
+        <div class="sec-4">
+            <a href="/return_form" class="add-btn"><i class="fa-solid fa-plus"></i></a>    
+        </div>        
+    <%- include('include/_sec-1.ejs')%>
+    <div class="sec-2">
+        <h1 class="txt-center">Return</h1>
+    </div>
+    <%- include('include/_sec-3.ejs')%>
+    </div>
+    <form action="/" >
+        <table class="table">
+            <thead class="thead">
+                <tr>
+                    <th>Serial No</th>
+                    <th>Id</th>
+                    <th>Return Date</th>
+                    <th>Issued Item Name</th>
+                    <th>Nomenclature</th>
+                    <th>Type</th>
+                    <th>Purpose of use</th>
+                    <th>Name of Receiver</th>
+                    <th>Issue Location</th>
+                    <th>Quantity Issued</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            <%- include('include/_ret.ejs')%>
+            </tbody> 
+        </table>
+    </form>
+    <%- include('include/_footer.ejs')%>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        form {
+            /* background-color: red; */
+            padding: 4rem;
+            display: grid;
+            gap: 1.2rem;
+            justify-content: center;
+            align-items: center; 
+            text-align: center;   
+            max-height: 80vh;      
+        }
+
+        label {
+            display: inline-block;
+            float: left;
+            clear: left;
+            width: 150px;
+            text-align: right;
+        }
+
+        input {
+            display: inline-block;
+            float: left;
+            margin-left: 5rem;
+            padding: .5rem;
+            width: 20rem;
+            border: none;
+            border-radius: 5px;
+        }
+        form button{
+            margin-top: 2rem;
+            padding: .75rem 2.5rem ;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .modal{
+            background-color: aqua;
+            height: fit-content;
+            width: fit-content;
+            position: relative;
+        }
+        .modal .close-modal{
+            position: absolute;
+            top: .3rem;
+            right: .5rem;
+            /* padding: 1rem; */
+            font-size: 3rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }   
+    </style>
+</head>
+
+<body>
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <form action="">
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="">Inspection Date</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="">Receipt No</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="">Inspection note no</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="">Supply order no</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="">Supplier</label>
+                <input type="text">
+            </div>
+            <div class="form-group"><label for="">Nomenclature</label>
+                <input type="text">
+            </div>
+            <div class="form-group"><label for="">Item name</label>
+                <input type="text">
+            </div>
+            <div class="form-group"><label for="">Issued person</label>
+                <input type="text">
+            </div>
+            <div class="form-group"><label for="">Issued person's section</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Save</button>
+            </div>
+    
+        </form>
+    </div>
+</body>
+
+</html>

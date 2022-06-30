@@ -1,0 +1,32 @@
+<% for(var i=0 ; i< exp.length; i++){ %>
+
+    <tr>
+        <td>
+            <%= i+1 %>
+        </td>
+        <td>
+            <%= exp[i].date %>
+        </td>
+        <td>
+            <%= exp[i].nomenclature_of_expandable %>
+        </td>
+        <td>
+            <%= exp[i].quantity %>
+        </td>
+        <td>
+            <%= exp[i].purpose_of_issue %>
+        </td>
+        <td>
+            <%= exp[i].name_of_consumer %>
+        </td>
+        <td>
+            <%= exp[i].remarks %>
+        </td>
+        <td><a href="/update-expandable/<%= exp[i]._id %>" class="border-shadow update btn">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="border-shadow delete btn" href="/delete_exp/<%= exp[i]._id %>"><span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+    </tr>
+    <%} %>

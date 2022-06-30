@@ -1,0 +1,44 @@
+<!-- Include Header -->
+<%- include('include/_header.ejs')%>
+
+<body>
+    <div class="header">
+        <div class="sec-4">
+            <a href="/condemnation_form" class="add-btn"><i class="fa-solid fa-plus"></i></a>    
+        </div>
+        
+    <%- include('include/_sec-1.ejs')%>
+    <div class="sec-2">
+        <h1 class="txt-center">Condemnation</h1>
+    </div>
+    <%- include('include/_sec-3.ejs')%>
+    </div>
+    <form action="/">
+        <table class="table">
+            <thead class="thead">
+                <tr>
+                    <th>Serial No</th>
+                    <th>Id</th>
+                    <th>Ledger</th>
+                    <th>Page</th>
+                    <th>Nomenclature</th>
+                    <th>A/U(unit)</th>
+                    <th>Quantity</th>
+                    <th>Serv(S)/ Unserv(US)</th>
+                    <th>Cost of Procurement</th>
+                    <th>Date of year of Procurement</th>
+                    <th>No of years of useful service</th>
+                    <th>No of years of non-utilization</th>
+                    <th>Reason for disposal</th>
+                    <th>R / NR</th>
+                    <th>Disposal Action</th>
+                    <th>Salvage/scrap weight</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            <%- include('include/_con.ejs')%>
+            </tbody> 
+        </table>
+    </form>
+    <%- include('include/_footer.ejs')%>

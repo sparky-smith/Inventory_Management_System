@@ -1,0 +1,47 @@
+<% for(var i=0 ; i< dist.length; i++){ %>
+
+    <tr>
+        <td>
+            <%= i+1 %>
+        </td>
+        <td>
+            <%= dist[i].id %>
+        </td>
+        <td>
+            <%= dist[i].date_of_issue %>
+        </td>
+        <td>
+            <%= dist[i].nomenclature %>
+        </td>
+        <td>
+            <%= dist[i].ledger %>
+        </td>
+        <td>
+            <%= dist[i].page %>
+        </td>
+        <td>
+            <%= dist[i].available_quantity %>
+        </td>
+        <td>
+            <%= dist[i].quantity_issued %>
+        </td>
+        <td>
+            <%= dist[i].purpose_of_use %>
+        </td>
+        <td>
+            <%= dist[i].issue_of_location %>
+        </td>
+        <td>
+            <%= dist[i].name_of_receiver %>
+        </td>
+        <td>
+            <%= dist[i].name_of_wing %>
+        </td>
+        <td><a href="/update-distribution/<%= dist[i]._id %>" class="border-shadow update btn">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="border-shadow delete btn" href="/delete_dist/<%= dist[i]._id %>"><span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+    </tr>
+    <%} %>

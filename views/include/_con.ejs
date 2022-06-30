@@ -1,0 +1,59 @@
+<% for(var i=0 ; i< con.length; i++){ %>
+
+    <tr>
+        <td>
+            <%= i+1 %>
+        </td>
+        <td>
+            <%= con[i].id %>
+        </td>
+        <td>
+            <%= con[i].ledger %>
+        </td>
+        <td>
+            <%= con[i].page %>
+        </td>
+        <td>
+            <%= con[i].nomenclature %>
+        </td>
+        <td>
+            <%= con[i].unit %>
+        </td>
+        <td>
+            <%= con[i].quantity %>
+        </td>
+        <td>
+            <%= con[i].serv %>
+        </td>
+        <td>
+            <%= con[i].cost_of_procurement %>
+        </td>
+        <td>
+            <%= con[i].date_of_procurement %>
+        </td>
+        <td>
+            <%= con[i].no_of_years_of_service %>
+        </td>
+        <td>
+            <%= con[i].no_of_years_of_nonutilization %>
+        </td>
+        <td>
+            <%= con[i].reason_for_disposal %>
+        </td>
+        <td>
+            <%= con[i].r_nr %>
+        </td>
+        <td>
+            <%= con[i].disposal_action %>
+        </td>
+        <td>
+            <%= con[i].salvage %>
+        </td>
+        <td><a href="/update-condemnation/<%= con[i]._id %>" class="border-shadow update btn">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="border-shadow delete btn" href="/delete_con/<%= con[i]._id %>"><span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+    </tr>
+    <%} %>
